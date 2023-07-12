@@ -9,6 +9,8 @@
              Implement a method that accepts the list and returns 
              a new list containing only the unique elements in the original order.
             */
+
+            Console.WriteLine("Task 1");
             List<int> listWithDoublicate = new List<int>();
             listWithDoublicate.Add(1);
             listWithDoublicate.Add(2);
@@ -30,6 +32,7 @@
             {
                 Console.WriteLine(i);
             }
+            Console.WriteLine("Task 2");
 
             /* 2. Implement a program that takes a list of strings as input 
              and performs the following operations:
@@ -58,6 +61,17 @@
                 Console.WriteLine(St);
             }
 
+            Console.WriteLine("Task 3");
+            //Console.WriteLine("Return the modified list.");
+            /* 3. Write a program that finds the maximum value in a list of integers.
+             Implement a method that accepts the list as input and returns the maximum value.
+            */
+            List<int> intList = new List<int>()
+            {
+                1, 2, 3,23,35,65,32,54
+            };
+
+            Console.WriteLine($"The maximum number is : { intList.Max()}");
 
         }
 
