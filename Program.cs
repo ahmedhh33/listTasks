@@ -73,6 +73,26 @@
 
             Console.WriteLine($"The maximum number is : { intList.Max()}");
 
+            Console.WriteLine("Task 4");
+            /* 4. Write a program that takes a string as an input and is a sentence. 
+             It should return a string with words in reverse order.")
+            */
+
+            
+            List<string> hellowords = new List<string>() { " Hy ", " My ", " Name ", " is ", " Ahmed " };
+            Console.WriteLine("befor reverse");
+            foreach(String St in hellowords)
+            {
+                Console.Write(St);
+            }
+            Console.WriteLine();
+            hellowords.Reverse();
+            Console.WriteLine("after reverse");
+            foreach (string St in hellowords)
+            {
+                Console.Write(St);
+            }
+            Console.WriteLine();
         }
 
         //public static List removechar(List<string> list, char cs)
