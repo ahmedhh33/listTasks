@@ -93,14 +93,42 @@
                 Console.Write(St);
             }
             Console.WriteLine();
+
+            Console.WriteLine("task5");
+            /* 5. Implement a program that takes a list of strings as input and checks 
+              if each string is a palindrome 
+             (reads the same forwards and backwards). Return a new list containing
+             only the palindromic strings.
+            */
+            List<string> itemsList = new List<string> { "Ahmed", "OLLO", "aja", "Nasser" };
+            List<string> items =CheckPilandrome(itemsList);
+            Console.WriteLine("Pilandromes items are ");
+
+            foreach(string St in items)
+            {
+                Console.WriteLine(St);
+            }
+            
         }
 
-        //public static List removechar(List<string> list, char cs)
-        //{
-        //    if (list.Contains(cs))
-        //    {
+        public static List<string> CheckPilandrome(List<string> theList)//butting the pilandromes in the new list
+        {
+            List<string> Pilandrom = new List<string>();
+            foreach (String Pl in theList)
+            {
+                if (IsPilandrome(Pl))
+                {
+                    Pilandrom.Add(Pl);
+                }
+            }
+            return Pilandrom;
+        }
 
-        //    }
-        //}
+        static bool IsPilandrome(String Pl) // checking pilandromes
+        {
+            string reversItem = new string(Pl.Reverse().ToArray());
+
+            return Pl.Equals(reversItem, StringComparison.OrdinalIgnoreCase);
+        }
     }
 }
